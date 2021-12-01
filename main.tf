@@ -25,7 +25,7 @@ provider "azurerm" {
 
 
 resource "azurerm_resource_group" "demo" {
-  name     = "demo"
+  name     = "demorg"
   location = "eastus"
 
 }
