@@ -6,7 +6,7 @@ Using GitHub Actions + Terraform cloud for Azure deployment is a nice combo. Act
 
 ## Part 1:  Configure Terraform Cloud account and generate an API key
 Overview: You will setup terraform cloud for remote API acces, and setup a workspace to be called by GitHub Actions.
-1. Create a [Terraform cloud](https://www.terraform.io/cloud), or sign-in if you have one already.
+1. Create a [Terraform cloud](https://www.terraform.io/cloud) account, or sign-in if you have one already.
 1. Create a Terraform api token.
    1. Click on the "User Settings" under the user avatar in the upper right corner of the screen
    1. Click on "Tokens" on the left nav panel.
