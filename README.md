@@ -1,21 +1,21 @@
 # Overview
 
-Using GitHub Actions + Terraform cloud for Azure deployment is my preferred combo. Actions is nice because the GitHub hosted runners are [well documented](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) in terms of setup, as opposed to Terraform. However, it's useful to store Terraform encrypted state in Terraform cloud, which is trivial using the Terraform workflow within Actions.
+Using GitHub Actions + Terraform cloud for Azure deployment is a nice combo. Actions is nice because the GitHub hosted runners are [well documented](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) in terms of setup, as opposed to Terraform. Terraform Cloud is nice because it always encrypts state at rest and protects it with TLS in transit.
 
 # Setup
 
 ## Part 1:  Configure Terraform Cloud account and generate an API key
 Overview: You will setup terraform cloud for remote API acces, and setup a workspace to be called by GitHub Actions.
-1. Create a [Terraform cloud](https://www.Terraform.io/cloud), or sign-in if you have one already.
+1. Create a [Terraform cloud](https://www.terraform.io/cloud), or sign-in if you have one already.
 1. Create a Terraform api token.
    1. Click on the "User Settings" under the user avatar in the upper right corner of the screen
    1. Click on "Tokens" on the left nav panel.
-   1. Click on "Create an API token". You should give your token a sensible name that relates to where it is consumed. I follow the convention of "github-<repo>" for my tokens.
+   1. Click on "Create an API token". You should give your token a sensible name that relates to where it is consumed. I follow the convention of "github_<repo>" for my tokens.
    1. The token will only be viewable once after generation, so save it somewhere secure for later when we apply it to your GitHub repo (e.g. a password safe).
 1. Create a Terraform workspace.
    1. Click "+ New workspace"
    1. Select "API-driven workflow"
-   1. Give your workspace a useful name (again, "github-<repo>" works here).
+   1. Give your workspace a useful name (again, "github_<repo>" works here).
    1. Copy the Terraform code block which appears and save it for later as well.
    1. Go to "Settings" for your new workspace, and change execution mode to "Local". Click "Save settings" when complete.
 
@@ -70,3 +70,11 @@ Overview: You will check-in a terraform file to trigger your workflow. Within th
    
 # Done!
 Congratulations. Hopefully you were able to complete this without any hiccups. If something is not working, please feel free to open an issue and I'll do my best to help as time allows.
+
+# References
+* https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+* https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#all
+* https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
+* https://www.terraform.io/docs/cloud/index.html
+* https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
+* https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret#configuring-the-service-principal-in-terraform
