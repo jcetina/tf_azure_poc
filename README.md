@@ -17,7 +17,7 @@ Overview: You will setup terraform cloud for remote API acces, and setup a works
    1. Select "API-driven workflow"
    1. Give your workspace a useful name (again, "github_\<repo\>" works here).
    1. Copy the Terraform code block which appears and save it for later as well.
-   1. Go to "Settings" for your new workspace, and change execution mode to "Local". Click "Save settings" when complete.
+   1. Go to "Settings->General" for your new workspace, and change execution mode to "Local". Click "Save settings" when complete.
 
 ## Part 2: Create Repo and configure for Terraform
 Overview: You will create a github repo and configure it to connect to terraform cloud.
