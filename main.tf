@@ -13,7 +13,7 @@ terraform {
     organization = "cetinas-dot-org"
 
     workspaces {
-      name = "tf_azure_poc"
+      name = "github_tf_azure_poc"
     }
   }
 
