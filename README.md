@@ -52,7 +52,7 @@ Overview: You will now generate an Azure Service Principal and corresponding cre
    * The tenant field will be assigned to the `ARM_TENANT_ID` environment variable.
 
 # Part 4: Set Azure envionment variables within the Terraform workflow in Actions.
-Overview: You will set job level environment variables for your Terraform workflow for Azure using the four variables created in Step 3.
+Overview: You will set job level environment variables for your Terraform workflow for Azure using the four variables created in Part 3.
 
 1. Configure your environment variables under the jobs->terraform->env in the terraform.yml file [like so](https://github.com/jcetina/tf_azure_poc/blob/809a7c5e6022413765fec74bc18929667b95475e/.github/workflows/terraform.yml#L58-L62), substituting your subcription, tenant, and client id accordingly.
 1. Commit this change.
