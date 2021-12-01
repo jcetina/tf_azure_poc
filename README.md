@@ -63,8 +63,8 @@ Overview: You will set job level environment variables for your Terraform workfl
 Overview: You will check-in a terraform file to trigger your workflow. Within this terraform file, you will configure remote settings for your terraform organization and workspace.
 1. Create a new main.tf file at the top level of your repo. You can just do this in the GitHub UI if you'd like.
 1. Copy the file contents [here](https://github.com/jcetina/tf_azure_poc/blob/8f9e59c4cabfb5cf278e9b609ea064b94c5fef79/main.tf) and paste them into the main.tf file above. DO NOT COMMIT THEM YET.
-1. Modify name and workspace variables in the backend block in the editor to match the values in the code block you copied all the way up in Part 1. Example backend code block [here](https://github.com/jcetina/tf_azure_poc/blob/8f9e59c4cabfb5cf278e9b609ea064b94c5fef79/main.tf#L12-L18).
-1. Once everything is configured corretly, you should commit main.tf to your repo. This will now trigger the Action do deploy the example resource group defined within main.tf
+1. Modify name and workspace variables in the [backend block]((https://github.com/jcetina/tf_azure_poc/blob/8f9e59c4cabfb5cf278e9b609ea064b94c5fef79/main.tf#L12-L18)) in the editor to match the values in the code block you copied all the way up near the end of Part 1.
+1. Once the backend block is configured corretly, you should commit main.tf to your repo. This will now trigger the Action do run the Terraform workflow.
 1. If you click on "Actions" for your repo, you can watch the output of your Action.
 1. If you log back in to your Terraform Cloud account, you should be able to see should be able to see any resources you created in the "Overview" tab for the remote workspace, and also any state under the "States" tab.
    
