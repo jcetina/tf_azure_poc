@@ -64,7 +64,7 @@ Overview: You will check-in a terraform file to trigger your workflow. Within th
 1. Create a new main.tf file at the top level of your repo. You can just do this in the GitHub UI if you'd like.
 1. Copy the file contents [here](https://github.com/jcetina/tf_azure_poc/blob/8f9e59c4cabfb5cf278e9b609ea064b94c5fef79/main.tf) and paste them into the main.tf file above. DO NOT COMMIT THEM YET.
 1. Modify the terraform remote organization and workspace name variables in the [backend block](https://github.com/jcetina/tf_azure_poc/blob/8f9e59c4cabfb5cf278e9b609ea064b94c5fef79/main.tf#L12-L18) in the editor to match the values in the code block you copied all the way up near the end of Part 1. These match the names of your organization and the workspace you configured in Terraform cloud, and you can always find them by logging back in to your Terraform Cloud account.
-1. Once the backend block is configured corretly, you should commit main.tf to your repo. This will now trigger the Action do run the Terraform workflow.
+1. Once the backend block is configured correctly, you should commit main.tf to your repo. This will now trigger the Action to run the Terraform workflow.
 1. If you click on "Actions" for your repo, you can watch the output of your Action.
 1. If you log back in to your Terraform Cloud account, you should be able to see should be able to see any resources you created in the "Overview" tab for the remote workspace, and also any state under the "States" tab.
    
