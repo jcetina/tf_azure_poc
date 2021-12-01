@@ -55,6 +55,7 @@ jobs:
     name: 'Terraform'
     runs-on: ubuntu-latest
     environment: production
+    env:
       ARM_SUBSCRIPTION_ID: ad3b85d9-1354-4383-a30c-6383716082e4
       ARM_TENANT_ID: 53a3b2a4-fb4f-4bea-8637-b567de9faebc
       ARM_CLIENT_ID: 5c328a1f-4c31-412b-918d-b42c0616e080
