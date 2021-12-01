@@ -10,12 +10,12 @@ Overview: You will setup terraform cloud for remote API acces, and setup a works
 1. Create a Terraform api token.
    1. Click on the "User Settings" under the user avatar in the upper right corner of the screen
    1. Click on "Tokens" on the left nav panel.
-   1. Click on "Create an API token". You should give your token a sensible name that relates to where it is consumed. I follow the convention of "github_<repo>" for my tokens.
+   1. Click on "Create an API token". You should give your token a sensible name that relates to where it is consumed. I follow the convention of "github_\<repo\>" for my tokens.
    1. The token will only be viewable once after generation, so save it somewhere secure for later when we apply it to your GitHub repo (e.g. a password safe).
 1. Create a Terraform workspace.
    1. Click "+ New workspace"
    1. Select "API-driven workflow"
-   1. Give your workspace a useful name (again, "github_<repo>" works here).
+   1. Give your workspace a useful name (again, "github_\<repo\>" works here).
    1. Copy the Terraform code block which appears and save it for later as well.
    1. Go to "Settings" for your new workspace, and change execution mode to "Local". Click "Save settings" when complete.
 
