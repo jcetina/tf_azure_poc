@@ -1,6 +1,6 @@
 # Overview
 
-Using GitHub Actions + Terraform cloud for Azure deployment is a nice combo. Actions is nice because the GitHub hosted runners are [well documented](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) in terms of setup, as opposed to Terraform. Terraform Cloud is nice because it always encrypts state at rest and protects it with TLS in transit.
+Using GitHub Actions + Terraform cloud for Azure deployment is a nice combo. Actions is nice because the GitHub hosted runners are [well documented](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) in terms of setup and also allow to install additional software if needed, as opposed to Terraform's hosted runners. Terraform Cloud is nice because it always encrypts state at rest and protects it with TLS in transit.
 
 # Setup
 
