@@ -10,10 +10,10 @@ terraform {
 
 
   backend "remote" {
-    organization = "cetinas-dot-org"
+    organization = var.TERRAFORM_ORG
 
     workspaces {
-      name = "github_tf_azure_poc"
+      name = var.TERRAFORM_WORKSPACE
     }
   }
 
